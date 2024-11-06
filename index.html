@@ -1,12 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+  <meta charset="UTF-8">
+  <title>Stephin Roberts | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<style>
+  .nav-bar {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #333;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: flex;
+    }
+
+    .nav-bar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .nav-bar a:hover {
+      color: limegreen;
+    }
+</style>
+  <style>
+   
+      header {
+        text-align: center;
+      }
+
+      .profile-picture {
+        margin: 20px auto; /* Center the profile picture */
+      }
+
+      .profile-picture img {
+        border-radius: 50%; /* Make the profile picture circular */
+        width: 200px; /* Adjust the width as needed */
+        height: 200px; /* Adjust the height as needed */
+      }
+
+      h1, h2 {
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      .profile-description {
+        max-width: 800px; /* Set a maximum width for the profile description */
+        margin: 0 auto; /* Center the profile description */
+        text-align: justify;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+      }
+      .profile-links a {
+        color: white; /* Set link text color to white */
+        background-color: #333;
+        text-decoration: none; /* Remove underlines from links */
+      }
+
+      .profile-links a:hover {
+        color: limegreen; /* Apply lime green color on hover */
+      }
+  </style>
+  <style>
+    .projects-container {
+      /* Use flex display to align projects horizontally */
+     
+      display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center; 
+      
+    }
+
+    .project {
+      width: calc(33.33% - 20px); /* Each project takes up 33.33% of the available space (minus the gap) to fit three projects per row */
+    }
+    </style>
+    <style>
+    .star-separator {
+        color: limegreen;
+       
+
+    }
+      
+    .work-experience {
+        margin: 30px 0;
+        
+        padding: 20px; /* Add some padding to create space between content and the background */
+        
+      }
+
+      .work-experience h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .work-experience p {
+        margin-bottom: 20px;
+      }
+      .work-experience img {
+        max-width: 100%; /* Set the maximum width of the image to 100% of its container */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+      }
+      .work-experience .notecard {
+        border-radius: 15px; /* Add rounded edges to the notecard */
+        overflow: hidden; /* Hide any content that overflows the rounded edges */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .work-experience .notecard img {
+        max-width: 100%; /* Set the maximum width of the image to 100% of its container */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+      }
+</style>
 </head>
 <body>
-    <h1>Hello Worldddd</h1>
-    <p>I'm hosted with GitHub Pages. Testing this out to see if changes are made.</p>
-</body>
-</html>
+  <div class="nav-bar">
+    <a href="#about">About</a>
+    <a href="https://github.com/rachelsteiner91" target="_blank">Work</a>
+    <a href="https://www.linkedin.com/in/rachelsteiner/" target="_blank">LinkedIn</a>
+  </div>
+<header>
+  <div class="profile-picture">
+    <img src="profilephoto.png" alt="Stephin Roberts">
+  </div>
+  <h1>Stephin Roberts</h1>
+  <h2>Software Engineer</h2>
+  <div class="profile-links">
+  <p><a href="tel:4155805743>415-580-5743</a> | <a href="mailto:stephincartier@gmail.com">stephincartier@gmail.com</a> | <a href="https://github.com/StephinAntonio7" target="_blank">GitHub</a> | <a href="https://medium.com/@stephin.roberts" target="_blank">Blog</a> | <a href="https://www.linkedin.com/in/stephin-roberts" target="_blank">LinkedIn</a></p>
+</div>
+<div class="city-container">
+  <p>
+    New York, NY
+  </p>
+</div>
+  <div class="profile-description">
+  <p>Software Salesperson turned Software Engineer.</p>
+  <p> Hello! My name is Rachel and I'm a certified Software Engineer from Flatiron School with proficiency in JavaScript, SQL, Python with Flask, React, and CSS for full stack application development. Experienced in driving sales and revenue growth and implementing effective digital strategies, I have a proven track record of success in business development and client relations, as demonstrated during my tenure at Google, Convelio, Yelp, and Localytics. Proficient in CRM tools such as Salesforce and HubSpot, I excel at leveraging technology to optimize processes and achieve exceptional results.</p>
+</div>
+</header>
+<div class="projects-container">
+    <!-- Project 1: Mermaid Matisse -->
+    <div class="project">
+      <img src="mermaids.png" alt="Mermaid Matisse Thumbnail" class="project-thumbnail">
+      <h3>Mermaid Matisse</h3>
+      <p>A user-centric, mobile-centric web platform for emerging art discovery, allowing users to easily swipe and virtually 'collect' art from lesser-known artists, creating a tailored art collection based on their preferences</p>
+      <div class="project-links">
+        <a href="https://youtu.be/r6dyHl2z8cQ" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo</a>
+        <a href="https://github.com/rachelsteiner91/mermaidmatisse/tree/01_mermaid" target="_blank"><i class="fab fa-github"></i> View Code</a>
+      </div>
+    </div>
+
+    <!-- Project 4: Bites & Brews -->
+<div class="project">
+    <img src="bitesbrews.png" alt="Bites and Brews Thumbnail" class="project-thumbnail">
+    <h3>Bites & Brews</h3>
+    <p>A recipe and cocktail site that allows users to browse meal and cocktail recipes and get the ingredient list and directions. Also allows for favoriting and submitting of recipes as well as getting a pairing recommendation.</p>
+    <div class="project-links">
+        <a href="https://bitesandbrews.onrender.com/" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo</a>
+        <a href="https://github.com/Evan-Roberts-808/Bites-and-Brews" target="_blank"><i class="fab fa-github"></i> View Code</a>
+    </div>
+</div>
+  
+    <!-- Project 2: Happy Trails -->
+    <div class="project">
+      <img src="happy trails screenshot.png" alt="Happy Trails Thumbnail" class="project-thumbnail">
+      <h3>Happy Trails</h3>
+      <p>A collection of the most popular hikes in Utah for hikers of all skill levels looking to explore the grand outdoors.</p>
+      <div class="project-links">
+        <a href="https://github.com/rachelsteiner91/HappyTrails" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo</a>
+        <a href="https://github.com/rachelsteiner91/HappyTrails" target="_blank"><i class="fab fa-github"></i> View Code</a>
+      </div>
+    </div>
+
+
+     <!-- Project 3: Sandridge -->
+     <div class="project">
+        <img src="sandridge.png" alt="Sandridge Thumbnail" class="project-thumbnail">
+        <h3>Sandridge</h3>
+        <p>Sandridge is a in-development command line text adventure created with Python, Flask, SQL and SQLAlchemy.</p>
+        <div class="project-links">
+          <a href="https://www.youtube.com/watch?v=Dq__chDTVB8" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo</a>
+          <a href="https://github.com/Evan-Roberts-808/Sandridge" target="_blank"><i class="fab fa-github"></i> View Code</a>
+        </div>
+      </div>
+
+      <div class="work-experience">
+        <h2> 
+            <div class="star-separator">
+               
+            </div>
+        </h2>
+        <div>
+            <p class="notecard">
+            <img src="a resume screenshot.png" alt="resume">
+
+        </p>
+    </div>
+  
+        <!-- You can add more work experience details using the same format -->
+      </div>
+  
+  
+
+  
+  </body>
+  </html>
