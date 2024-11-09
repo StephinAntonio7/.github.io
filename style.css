@@ -38,7 +38,7 @@ body {
         height: 180px; /* Ensure the image is square to make it a perfect circle */
         object-fit: cover; /* Make sure the image fills the circle */
         border: 3px solid #fff;
-        box-shadow: 0px 0px 15px 0px rgba(85, 187, 97, 0.2);
+        box-shadow: 0px 0px 10px rgba(85, 187, 97, 0.15);
       }
       
     
