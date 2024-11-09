@@ -96,7 +96,9 @@
       
     .work-experience {
         margin: 30px 0;
-        
+        width: 100%; /* Makes sure the work-experience section takes full width */
+        display: flex;
+        justify-content: center; /* Centers the content */
         padding: 20px; /* Add some padding to create space between content and the background */
         
       }
@@ -121,10 +123,9 @@
       }
 
       .work-experience .notecard img {
-        max-width: 100%; /* Ensures the image fits within the screen width */
-        height: auto; /* Maintains the image's aspect ratio */
-        display: block; /* Removes any extra space below the image */
-        margin: 0 auto; /* Centers the image */
+        width: 100%; /* Ensures the image stretches to the full width of its container */
+        max-width: 100%; /* Prevents it from growing beyond the screen width */
+        height: auto; /* Maintains the aspect ratio */
       }
 </style>
 </head>
